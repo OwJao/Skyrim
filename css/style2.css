@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'SkyrimTextoFonte';
+    src: url(../fonts/planewalker/Planewalker.otf);
+    src: url(../fonts/planewalker/Planewalker\ Bold.otf);
+    src: url(../fonts/planewalker/Planewalker\ Bold\ Italic.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SkyrimLogoFonte';
+    src: url(../fonts/darksskyrimfont/DarkXShadowX21SkyrimFont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../imagens/skyrim.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 100%;
+}
+
+header h1 {
+    letter-spacing: .1em;
+    font-size: 3em;
+    font-family: SkyrimLogoFonte;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+}
+
+.header-container {
+    gap: 10px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    animation: glow 2s infinite alternate;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+ 
+@keyframes glow{
+    from {text-shadow:0px 0px 5px #ffffff54,0px 0px 10px #ffffff4f;}
+    to {text-shadow:0px 0px 20px #ffffff62,0px 0px 30px #ffffff7e;}
+  }
+
+.title-container>p {
+    font-family: SkyrimTextoFonte;
+    font-weight: normal;
+    font-style: normal;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: -30px;
+    color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#logo {
+    padding-top: 5px;
+    transition: all 1s;
+    width: 75px;
+    height: 120px;
+}
+
+#logo:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.2);
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(221, 219, 219, 0.377));
+    filter: drop-shadow(0px 0px 10px rgba(148, 146, 146, 0.671));
+}
+
+nav {
+    height: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav a {
+    transition: all .5s;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 7px white;
+    font-size: 1.3em;
+    transition: all .5s;
+}
+
+#ondeuto {
+    text-shadow: 0px 0px 10px white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: white;
+}
+
+#seta {
+    width: 15px;
+}
+
+main {
+    color: white;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.racas {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.815);;
+}
+
+.racas h2 {
+    font-family: SkyrimTextoFonte;
+    
+    text-shadow: 0px 0px 5px black;
+    text-align: center;
+}
+
+.racas p {
+    font-family: SkyrimTextoFonte;
+    color: rgb(184, 181, 181);
+    text-align: center;
+    font-size: .9em;
+    font-style: italic;
+    font-weight: normal;
+    text-shadow: 0px 0px 5px black;
+    letter-spacing: 1px;
+}
+
+.boxscontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+}
+
+#Caixasmassa {
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.815);;
+    display: flex;
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#Caixasmassa h2 {
+    font-family: SkyrimTextoFonte;
+    font-weight: normal;
+    font-size: 2em;
+    text-shadow: 0px 0px 5px black;
+}
+
+#Caixasmassa p {
+    text-align: justify;
+    padding: 15px 15px 10px 15px;
+    text-indent: 1em;
+    margin: 3px 0px 0px 0px 0px;
+}
+
+#caixatop1 {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caixatop1 h2 {
+    margin: 0px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#argonian {
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#argonian:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#breton {
+    margin-top: 13px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#breton:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#darkelf {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#darkelf:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#highelf {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#highelf:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#imperial {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#imperial:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#khajiit {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#khajiit:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#nord {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#nord:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#orc {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#orc:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#redguard {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#redguard:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#woodelf {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+}
+
+#woodelf:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#caixatop2 {
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caixatop2 h2 {
+    margin: 0px;
+    color: white;
+}
+
+#caixatop3 {
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caixatop3 h2 {
+    margin: 0px;
+}

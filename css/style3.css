@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'SkyrimTextoFonte';
+    src: url(../fonts/planewalker/Planewalker.otf);
+    src: url(../fonts/planewalker/Planewalker\ Bold.otf);
+    src: url(../fonts/planewalker/Planewalker\ Bold\ Italic.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SkyrimLogoFonte';
+    src: url(../fonts/darksskyrimfont/DarkXShadowX21SkyrimFont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../imagens/skyrim.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 100%;
+}
+
+header h1 {
+    letter-spacing: .1em;
+    font-size: 3em;
+    font-family: SkyrimLogoFonte;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+}
+
+.header-container {
+    gap: 10px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    animation: glow 2s infinite alternate;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+ 
+@keyframes glow{
+    from {text-shadow:0px 0px 5px #ffffff54,0px 0px 10px #ffffff4f;}
+    to {text-shadow:0px 0px 20px #ffffff62,0px 0px 30px #ffffff7e;}
+  }
+
+.title-container>p {
+    font-family: SkyrimTextoFonte;
+    font-weight: normal;
+    font-style: normal;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: -30px;
+    color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#logo {
+    padding-top: 5px;
+    transition: all 1s;
+    width: 75px;
+    height: 120px;
+}
+
+#logo:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.2);
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(221, 219, 219, 0.377));
+    filter: drop-shadow(0px 0px 10px rgba(148, 146, 146, 0.671));
+}
+
+nav {
+    height: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav a {
+    transition: all .5s;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 7px white;
+    font-size: 1.3em;
+    transition: all .5s;
+}
+
+#ondeuto {
+    text-shadow: 0px 0px 10px white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: white;
+}
+
+#seta {
+    width: 15px;
+}
+
+main {
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    width: auto;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+.bandeiras {
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.349);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+.cool {
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+.cool1 {
+    text-align: justify;
+    padding: 20px;
+    max-width: 600px;
+    padding-left: -0px;
+}
+
+.bandeiras h2 {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.384);
+    font-family: SkyrimTextoFonte;
+    text-align: center;
+}
+
+.bandeiras p {
+    text-align: justify;
+}
+
+#companionflag {
+    overflow: auto;
+    width: 150px;
+    height: 400px;
+    margin-top: -10px;
+    float: left;
+}
+
+.redflagcont {
+    margin: 0px;
+    text-indent: 1em;
+}
+
+.cool2 {
+    padding: 20px;
+    text-align: justify;
+}
+
+#mageflag {
+    padding-right: 10px;
+    overflow: auto;
+    width: 150px;
+    height: 400px;
+    margin-top: -10px;
+    float: left;
+}
+
+#thievesflag {
+    padding-right: 10px;
+    overflow: auto;
+    width: 150px;
+    height: 400px;
+    margin-top: -10px;
+    float: left;
+}
