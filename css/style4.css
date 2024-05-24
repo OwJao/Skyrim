@@ -123,11 +123,38 @@ nav a:hover {
 
 main {
     border-radius: 10px;
-    border: 1px solid white;
     color: white;
     margin: auto;
-    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.349);
+    background-color: rgba(0, 0, 0, 0.815);
     padding: 10px;
     width: auto;
     min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+main strong {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.384);
+    font-family: SkyrimTextoFonte;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+main h6 {
+    font-family: SkyrimTextoFonte;
+    color: rgb(184, 181, 181);
+    text-align: center;
+    font-size: .9em;
+    font-style: italic;
+    font-weight: normal;
+    text-shadow: 0px 0px 5px black;
+    letter-spacing: 1px;
+    max-width: 600px;
+}
+
+main ul {
+    max-width: 1100px;
 }
